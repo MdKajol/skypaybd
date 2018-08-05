@@ -352,7 +352,7 @@ div.popover.ku-success {
 div.popover.ku-success .arrow:before{border-right-color: #29b000;}
 div.popover.ku-success .arrow:after{border-right-color: #29b000;}
 
-.showError, {
+.showError {
    border: 3px solid #f4645f;
    padding: 10px;
    color: #f4645f;
@@ -364,6 +364,13 @@ div.popover.ku-success .arrow:after{border-right-color: #29b000;}
    border: 3px solid #f4645f;
    padding: 10px;
    color: #f4645f;
+   margin-bottom: 10px;
+}
+.message.success {
+   display: block;
+   border: 3px solid #29b000;
+   padding: 10px;
+   color: #29b000;
    margin-bottom: 10px;
 }
 .error li {
@@ -511,6 +518,6 @@ footer {
    margin-bottom: 20px;
 }
 
-user.form-wrapper input {
+.user.form-wrapper input {
    margin-bottom: 0;
 }

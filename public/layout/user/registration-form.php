@@ -1,9 +1,9 @@
 <?php
-$user_full_name = "";
-$user_email = "";
-$user_password = "";
-$user_confirm_pass = "";
-$user_phone = "";
+   $user_full_name = "";
+   $user_email = "";
+   $user_password = "";
+   $user_confirm_pass = "";
+   $user_phone = "";
 
 
    if(is_post_request()) {
@@ -52,7 +52,6 @@ $user_phone = "";
       if(!has_valid_phone_format($user_phone)) {
 	      $errors[] = "Invalid phone number";
       }
-
       // check validation errors
        if(!$errors) {
 	       // validation success insert user data to database
@@ -61,15 +60,22 @@ $user_phone = "";
 	       $val = [$user_full_name, $user_email, $user_password_hash, $user_phone, $user_activation_key, $user_activation_expire];
 	       $user_inserted = db_insert("sky_user", $col, $val);
 	       if($user_inserted) {
-//	          echo "A mail has been send to " . $user_email . "<br>check your inbox or spam";
-//	          $message = "click here to active your account: " . DOMAIN_PATH . "?mail=" . $user_email . "&key=" . $user_activation_key;
-//	          mail($user_email, "Active your accound", $message);
+            $message = "click here to active your account: " . DOMAIN_PATH . "/user/activation.php?mail=" . $user_email . "&key=" . $user_activation_key;
 
-              echo "user created sent the mail";
+            $sent = phpMailer(array(
+               "from" => ["email" => "skypaybd.org", "name" => "Sky Pay BD"],
+               "to" => ["email" => $user_email, "name" => $user_full_name],
+               "subject" => "Account Verification",
+               "body" => $message
+            ));
+            if($sent) {
+               $_SESSION["message"] =  "A mail has been send to " . $user_email . "<br>Please check your inbox or spam";
+            }
           }
        }
    }
 ?>
+
 <section class="home-fullscreen">
    <div class="full-screen-v admin">
       <div class="container">
@@ -77,8 +83,8 @@ $user_phone = "";
             <div class="col-md-6 offset-md-3 mt-60 mb-60">
                <div class="olympia-form">
                   <div class="showError"></div>
-				   <?php echo showMsg("error"); ?>
-				   <?php echo showError(); ?>
+                  <?php echo showMsg("success"); ?>
+                  <?php echo showError(); ?>
                   <h2 class="olympia-title-min">Register</h2>
                   <div class="user form-wrapper">
                      <form id="regitration-form" action="" method="POST">

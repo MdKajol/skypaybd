@@ -132,3 +132,34 @@ function generateRandomString() {
 	}
 	return $randomString;
 }
+
+function update_user_status($user_id, $user_email) {
+	global $db;
+	if(!isset($user_id) || !isset($user_email)) { return false; }
+	$sql = "UPDATE sky_user SET ";
+	$sql .= "user_activation_status='active' ";
+	$sql .= "WHERE user_id = '". es($user_id) ."' AND user_email = '". es($user_email) ."' ";
+	$sql .= "LIMIT 1";
+
+	$update = $db->query($sql);
+	if($db->affected_rows > 0) {
+		return true;
+	}
+}
+
+function clear_user_activation($user_id, $user_email) {
+	global $db;
+	if(!isset($user_id) || !isset($user_email)) { return false; }
+	$sql = "UPDATE sky_user SET ";
+	$sql .= "user_activation_key=null, ";
+	$sql .= "user_activation_expire=null ";
+	$sql .= "WHERE user_id = '". es($user_id) ."' AND user_email = '". es($user_email) ."' ";
+	$sql .= "LIMIT 1";
+
+	$update = $db->query($sql);
+	if($db->affected_rows > 0) {
+		return true;
+	} else {
+		echo $db->error;
+	}
+}
