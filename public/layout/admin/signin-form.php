@@ -43,7 +43,7 @@ if(is_post_request()) {
                <div class="olympia-form">
                   <div class="showError"></div>
 				   <?php echo showMsg("error"); ?>
-                  <h2 class="olympia-title-min">Sign In</h2>
+                  <h2 class="olympia-title-min">Sign In - (Admin)</h2>
                   <div class="form-wrapper">
                      <form id="admin-form" action="" method="POST">
                         <input id="admin-email" autocomplete="off" data-toggle="popover" name="email" type="email" placeholder="Your Email" required>

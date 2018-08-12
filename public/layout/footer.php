@@ -1,5 +1,5 @@
 	<!-- footer start -->
-   <footer>
+   <footer class="">
       <div class="footer-area pt-50 pb-50">
          <div class="container">
             <div class="row align-items-center">

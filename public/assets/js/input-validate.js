@@ -96,6 +96,21 @@ function checkPhone(ele, region = "", message = null) {
       }
    }
 }
+function checkNumeric(ele, message = null) {
+   var vl = $(ele).val();
+   if(isNaN(vl)) {
+      if( window.errors.hasOwnProperty( $(ele).attr("id") ) ) {
+         errors[$(ele).attr("id")].numeric = message ? message: "only numeric";
+      } else {
+         errors[$(ele).attr("id")] = {};
+         errors[$(ele).attr("id")].numeric = message ? message: "only numeric";
+      }
+   } else {
+      if( window.errors.hasOwnProperty( $(ele).attr("id") ) ) {
+         delete errors[$(ele).attr("id")].numeric;
+      }
+   }
+}
 
 function checkValidation(param) {
    errors.initSubmit = false;
@@ -134,12 +149,16 @@ function checkValidation(param) {
          checkPhone(ele, check.checkPhone[1], check.checkPhone[2]);
       }
    }
+   if(check.numeric) {
+      if(check.numeric[0]) {
+         checkNumeric(ele, check.numeric[1]);
+      }
+   }
 
    if(jQuery.isEmptyObject(errors[$(ele).attr("id")])) {
       return "pass";
    }
 }
-
 function getErrorMsg(ele) {
    var errorMeg = ""
    for(var error in errors[$(ele).attr("id")]) {
@@ -246,7 +265,6 @@ $("#admin-form").on("submit", function (e) {
          $(this)[0].submit();
       } else {
          // initial form submit
-         console.log("please fill the form");
          showError($(".showError"), "Please fill the form Data");
       }
 
@@ -357,10 +375,161 @@ $("#userPhoneNumber").on("keyup focus", function() {
 });
 
 
+// user buying form validation
+$("#paymentMethod").on("change", function() {
+   hideError($(".showError"));
 
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "please select one"],
+      }
+   });
 
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#receivedMethod").on("change", function() {
+   hideError($(".showError"));
 
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "please select one"],
+      }
+   });
 
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#buyDollar").on("keyup focus", function() {
+   hideError($(".showError"));
 
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "cannot be blank"],
+         numeric: [true, "please enter numeric character"]
+      }
+   });
 
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#bkashNumber").on("keyup focus", function() {
+   hideError($(".showError"));
+   console.log(errors);
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "Bkash number cannot be blank"],
+         minLength: [10, "minimum 11 character required"],
+         maxLength: [15, "maximum 14 character required"],
+         numeric: [true, "please enter numeric character"],
+         checkPhone: [true, "BD", "Invalid phone number"]
+
+      }
+   });
+
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#rocketNumber").on("keyup focus", function() {
+   hideError($(".showError"));
+   console.log(errors);
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         minLength: [10, "minimum 11 character required"],
+         maxLength: [15, "maximum 14 character required"],
+         numeric: [true, "please enter numeric character"],
+         checkPhone: [true, "BD", "Invalid phone number"]
+
+      }
+   });
+
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#buySubmit").on("submit", function (e) {
+   e.preventDefault();
+   var errorId = checkErrorExist();
+   if(errorId) {
+      // show the errors
+      for(var l = 0; l < errorId.length; l++) {
+         var id = "#" + errorId[l]
+         var emailError = getErrorMsg($(id));
+         showValidationError($(id), emailError);
+      }
+   } else {
+      if(!errors.initSubmit) {
+         $(this)[0].submit();
+      } else {
+         // initial form submit
+         showError($(".showError"), "Please fill the form Data");
+      }
+
+   }
+});
+
+$(".email").on("keyup focus", function() {
+   hideError($(".showError"));
+
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         email: [true, "Please Enter a valid email"]
+      }
+   });
+
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$(".empty").on("keyup focus", function() {
+   hideError($(".showError"));
+   console.log(errors);
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "cannot be blank"],
+      }
+   });
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
 

@@ -29,8 +29,7 @@ $.scrollUp({
 
 
 // element toggle
-
-$("#admin-pro-hide a").click(function(e){
+$("#admin-pro-hide a").on('click',function(e){
    e.preventDefault();
    var state = $("#admin-pro").attr("ku-toggle");
    if(state == "show") {
@@ -45,5 +44,173 @@ $("#admin-pro-hide a").click(function(e){
 
 });
 
-// design google reCaptha
+// payment method details
+$("select#paymentMethod").on("change", function () {
+   var selectedPaymentMethod = $(this).val();
+
+   switch (selectedPaymentMethod) {
+      case "bkash" :
+         // show bkash option
+         $(".paymentDetails").hide();
+         $(".paymentDetails input, .paymentDetails textarea").attr("disabled", "disabled");
+         $(".bkashDetails").show();
+         $(".bkashDetails input, .bkashDetails textarea").removeAttr("disabled", "disabled");
+         break;
+      case "rocket" :
+         // show nexus pay details
+         $(".paymentDetails").hide();
+         $(".paymentDetails input, .paymentDetails textarea").attr("disabled", "disabled");
+         $(".nexusPayDetails").show();
+         $(".nexusPayDetails input, .nexusPayDetails textarea").removeAttr("disabled", "disabled");
+         break;
+      case "bank" :
+         // show nexus pay details
+         $(".paymentDetails").hide();
+         $(".paymentDetails input, .paymentDetails textarea").attr("disabled", "disabled");
+         $(".bankPayDetails").show();
+         $(".bankPayDetails input, .bankPayDetails textarea").removeAttr("disabled", "disabled");
+         break;
+      default :
+         // hide payment details
+         $(".paymentDetails").hide();
+         $(".paymentDetails input, .paymentDetails textarea").attr("disabled", "disabled");
+         break;
+   }
+
+});
+
+// receive method details
+$("select#receivedMethod").on("change", function () {
+   var selectedReceivedMethod = $(this).val();
+   switch (selectedReceivedMethod) {
+      case "paypal" :
+         // show paypal option
+         $(".receiveDetails").hide();
+         $(".receiveDetails input, .receiveDetails textarea").attr("disabled", "disabled");
+
+         $(".receiveDetails.paypal").show();
+         $(".receiveDetails.paypal input, .receiveDetails.paypal textarea").removeAttr("disabled", "disabled");
+         break;
+      case "payoneer" :
+         // show payoneer pay details
+         $(".receiveDetails").hide();
+         $(".receiveDetails input, .receiveDetails textarea").attr("disabled", "disabled");
+
+         $(".receiveDetails.payoneer").show();
+         $(".receiveDetails.payoneer input, .receiveDetails.payoneer textarea").removeAttr("disabled", "disabled");
+         break;
+      case "neteller" :
+         // show neteller pay details
+         $(".receiveDetails").hide();
+         $(".receiveDetails input, .receiveDetails textarea").attr("disabled", "disabled");
+
+         $(".receiveDetails.neteller").show();
+         $(".receiveDetails.neteller input, .receiveDetails.neteller textarea").removeAttr("disabled", "disabled");
+         break;
+      case "skrill" :
+         console.log("skrill");
+         // show nexus pay details
+         $(".receiveDetails").hide();
+         $(".receiveDetails input, .receiveDetails textarea").attr("disabled", "disabled");
+
+         $(".receiveDetails.skrill").show();
+         $(".receiveDetails.skrill input, .receiveDetails.skrill textarea").removeAttr("disabled", "disabled");
+      break;
+      default :
+         // hide receive details
+         $(".receiveDetails").hide();
+         $(".receiveDetails input, .receiveDetails textarea").attr("disabled", "disabled");
+         break;
+   }
+});
+
+// exchange pay method details
+$("select#exchangeMethod").on("change", function () {
+   var selectedReceivedMethod = $(this).val();
+   switch (selectedReceivedMethod) {
+      case "paypal" :
+         // show paypal option
+         $(".exchangeDetails").hide();
+         $(".exchangeDetails input, .exchangeDetails textarea").attr("disabled", "disabled");
+
+         $(".exchangeDetails.paypal").show();
+         $(".exchangeDetails.paypal input, .exchangeDetails.paypal textarea").removeAttr("disabled", "disabled");
+         break;
+      case "payoneer" :
+         // show payoneer pay details
+         $(".exchangeDetails").hide();
+         $(".exchangeDetails input, .exchangeDetails textarea").attr("disabled", "disabled");
+
+         $(".exchangeDetails.payoneer").show();
+         $(".exchangeDetails.payoneer input, .exchangeDetails.payoneer textarea").removeAttr("disabled", "disabled");
+         break;
+      case "neteller" :
+         // show neteller pay details
+         $(".exchangeDetails").hide();
+         $(".exchangeDetails input, .exchangeDetails textarea").attr("disabled", "disabled");
+
+         $(".exchangeDetails.neteller").show();
+         $(".exchangeDetails.neteller input, .exchangeDetails.neteller textarea").removeAttr("disabled", "disabled");
+         break;
+      case "skrill" :
+         console.log("skrill");
+         // show nexus pay details
+         $(".exchangeDetails").hide();
+         $(".exchangeDetails input, .exchangeDetails textarea").attr("disabled", "disabled");
+
+         $(".exchangeDetails.skrill").show();
+         $(".exchangeDetails.skrill input, .exchangeDetails.skrill textarea").removeAttr("disabled", "disabled");
+         break;
+      default :
+         // hide receive details
+         $(".exchangeDetails").hide();
+         $(".exchangeDetails input, .exchangeDetails textarea").attr("disabled", "disabled");
+         break;
+   }
+});
+
+
+
+
+function convert_dollar_to_taka(dollar, opt) {
+   if(opt == "buy") {
+      if(!isNaN(dollar)) {
+         return parseFloat((dollar * 102));
+      } else {
+         console.log("not a number")
+      }
+   } else if(opt == "sell") {
+      if(!isNaN(dollar)) {
+         return parseFloat((dollar * 85));
+      } else {
+         console.log("not a number")
+      }
+   } else {
+      if(!isNaN(dollar)) {
+         return parseFloat((dollar * 0.9));
+      } else {
+         console.log("not a number")
+      }
+   }
+
+}
+
+$("#buyDollar").on("keyup", function(){
+   var dollar = $(this).val();
+   var taka = convert_dollar_to_taka(dollar, "buy");
+   $("#dollarInTaka").val(taka);
+});
+
+$("#sellDollar").on("keyup", function(){
+   var dollar = $(this).val();
+   var taka = convert_dollar_to_taka(dollar, "sell");
+   $("#dollarInTaka").val(taka);
+});
+
+$("#exchangeDollar").on("keyup", function(){
+   var dollar = $(this).val();
+   var taka = convert_dollar_to_taka(dollar, "exchange");
+   $("#dollarInTaka").val(taka);
+});
+
 

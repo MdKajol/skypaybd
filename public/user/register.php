@@ -1,8 +1,7 @@
 <?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/private/init.php"); ?>
-<?php
-ob_start();
-admin_access_deny();
-?>
+<?php ob_start(); ?>
+<?php admin_access_deny(); ?>
+<?php user_access_deny() ?>
 <?php require_once(inc_file("layout/header.php")); ?>
 <!-- home fullscreen video start -->
 <?php require_once(inc_file("layout/user/registration-form.php")); ?>

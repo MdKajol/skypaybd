@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b8f8188-8322-41ac-a327-e8f80a8398bf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin/buy/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin/exchange/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin/sell/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin/ticket/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/admin/left-menu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/admin/user-controll.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/user/buy/registration-form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/user/exchange/registration-form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/user/left-menu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/user/sell/registration-form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/layout/user/user-controll.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/user/buy/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/user/exchange/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/user/sell/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/user/ticket/index.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/quick_test.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/video/home-video.mp4" afterPath="$PROJECT_DIR$/public/assets/video/home-video.mp4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/inc/const.php" afterPath="$PROJECT_DIR$/private/inc/const.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/inc/db.php" afterPath="$PROJECT_DIR$/private/inc/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/inc/functions.php" afterPath="$PROJECT_DIR$/private/inc/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/phpmailer/PHPMailerAutoload.php" afterPath="$PROJECT_DIR$/private/phpmailer/PHPMailerAutoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/index.php" afterPath="$PROJECT_DIR$/public/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/signin.php" afterPath="$PROJECT_DIR$/public/admin/signin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/sinam.css" afterPath="$PROJECT_DIR$/public/assets/css/sinam.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/style.css" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/input-validate.js" afterPath="$PROJECT_DIR$/public/assets/js/input-validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/ku-main.js" afterPath="$PROJECT_DIR$/public/assets/js/ku-main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/admin/signin-form.php" afterPath="$PROJECT_DIR$/public/layout/admin/signin-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/dashboard-footer.php" afterPath="$PROJECT_DIR$/public/layout/dashboard-footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/footer.php" afterPath="$PROJECT_DIR$/public/layout/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/header.php" afterPath="$PROJECT_DIR$/public/layout/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/user/registration-form.php" afterPath="$PROJECT_DIR$/public/layout/user/registration-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout/user/signin-form.php" afterPath="$PROJECT_DIR$/public/layout/user/signin-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/user/activation.php" afterPath="$PROJECT_DIR$/public/user/activation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/user/index.php" afterPath="$PROJECT_DIR$/public/user/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/user/logout.php" afterPath="$PROJECT_DIR$/public/user/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/user/register.php" afterPath="$PROJECT_DIR$/public/user/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/user/signin.php" afterPath="$PROJECT_DIR$/public/user/signin.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="skypaybd.div" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jekyll</find>
+      <find>error</find>
+      <find>main</find>
+      <find>admin</find>
+      <find>show</find>
+      <find>form</find>
+      <find>$response</find>
+      <find>http://skypaybd.div</find>
+      <find>message</find>
+      <find>admin-details</find>
+      <find>Menu One Menu Two Menu Three</find>
+      <find>icofont icofont-abc</find>
+      <find>footer</find>
+      <find>643</find>
+      <find>admin-pro-hide</find>
+      <find>517</find>
+      <find>login</find>
+      <find>pay_method</find>
+      <find>pay_d</find>
+      <find>rec_d</find>
+      <find>.rec</find>
+      <find>receiveDetails</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>public</replace>
+      <replace>errors</replace>
+      <replace>from</replace>
+      <replace>exchangeDetails</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/private/inc/debug_functions.php" />
+        <option value="$PROJECT_DIR$/public/admin/logout.php" />
+        <option value="$PROJECT_DIR$/public/layout/home/fullscreen.php" />
+        <option value="$PROJECT_DIR$/private/inc/validation_functions.php" />
+        <option value="$PROJECT_DIR$/private/init.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/private/inc/const.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/public/.htaccess" />
+        <option value="$PROJECT_DIR$/private/inc/session.php" />
+        <option value="$PROJECT_DIR$/private/phpmailer/PHPMailerAutoload.php" />
+        <option value="$PROJECT_DIR$/public/user/logout.php" />
+        <option value="$PROJECT_DIR$/public/admin/signin.php" />
+        <option value="$PROJECT_DIR$/public/layout/admin/signin-form.php" />
+        <option value="$PROJECT_DIR$/public/layout/user/registration-form.php" />
+        <option value="$PROJECT_DIR$/public/user/activation.php" />
+        <option value="$PROJECT_DIR$/public/layout/footer.php" />
+        <option value="$PROJECT_DIR$/public/quick_test.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/private/inc/functions.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/public/layout/header.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/public/layout/user/registration-form.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/public/user/activation.php" />
+        <option value="$PROJECT_DIR$/public/layout/user/signin-form.php" />
+        <option value="$PROJECT_DIR$/public/user/signin.php" />
+        <option value="$PROJECT_DIR$/public/layout/user/left-menu.php" />
+        <option value="$PROJECT_DIR$/public/user/register.php" />
+        <option value="$PROJECT_DIR$/public/layout/dashboard-footer.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/sinam.css" />
+        <option value="$PROJECT_DIR$/public/user/ticket/index.php" />
+        <option value="$PROJECT_DIR$/public/user/index.php" />
+        <option value="$PROJECT_DIR$/public/user/buy/index.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/private/phpmailer/PHPMailerAutoload.php" />
+        <option value="$PROJECT_DIR$/private/inc/const.php" />
+        <option value="$PROJECT_DIR$/public/layout/user/user-controll.php" />
+        <option value="$PROJECT_DIR$/private/inc/functions.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/input-validate.js" />
+        <option value="$PROJECT_DIR$/public/layout/admin/user-controll.php" />
+        <option value="$PROJECT_DIR$/public/layout/header.php" />
+        <option value="$PROJECT_DIR$/private/inc/db.php" />
+        <option value="$PROJECT_DIR$/public/user/sell/index.php" />
+        <option value="$PROJECT_DIR$/public/layout/user/buy/registration-form.php" />
+        <option value="$PROJECT_DIR$/public/layout/user/sell/registration-form.php" />
+        <option value="&lt;06ab3f97-13bb-4939-a5d8-1bfc94dab7e0&gt;/.htaccess" />
+        <option value="$PROJECT_DIR$/public/user/exchange/index.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/public/assets/js/ku-main.js" />
+        <option value="$PROJECT_DIR$/public/layout/user/exchange/registration-form.php" />
+        <option value="$PROJECT_DIR$/public/layout/admin/left-menu.php" />
+        <option value="$PROJECT_DIR$/public/admin/index.php" />
+        <option value="$PROJECT_DIR$/public/admin/ticket/index.php" />
+        <option value="$PROJECT_DIR$/public/admin/exchange/index.php" />
+        <option value="$PROJECT_DIR$/public/admin/sell/index.php" />
+        <option value="$PROJECT_DIR$/public/admin/buy/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralPHP</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpIncludeInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skypaybd.div" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skypaybd.div" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="admin/in&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/admin/index.php&#10;style&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/css/style.css&#10;m&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/ku-main.js&#10;ku&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/ku-main.js&#10;form&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/user/buy/registration-form.php&#10;db&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/db.php&#10;function&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/functions.php&#10;header&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/header.php&#10;user&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/user/user-controll.php&#10;vali&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/input-validate.js&#10;func&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/functions.php&#10;KU&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/ku-main.js&#10;cons&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/const.php&#10;hea&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/header.php&#10;val&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/validation_functions.php&#10;s&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/css/style.css&#10;footer&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/dashboard-footer.php&#10;st&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/css/style.css&#10;styl&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/css/style.css&#10;heaer&#9;null&#9;null&#10;k&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/ku-main.js&#10;fun&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/functions.php&#10;index.php&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/admin/index.php&#10;con&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/const.php&#10;quick&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/quick_test.php&#10;inpu&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/input-validate.js&#10;input&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/js/input-validate.js&#10;funct&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/functions.php&#10;regi&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/user/registration-form.php&#10;register&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/user/register.php&#10;index&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/admin/index.php&#10;sytle&#9;null&#9;null&#10;functi&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/private/inc/functions.php&#10;style.css&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/assets/css/style.css&#10;foo&#9;FILE&#9;file://E:/XAMPP/htdocs/skypaybd.div/public/layout/footer.php" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\public\admin" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\public" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.div" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.org\private" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.org\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\public\layout\user\exchange" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\public\layout\user\sell" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\public\layout\admin" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\public\layout\user\buy" />
+      <recent name="E:\XAMPP\htdocs\skypaybd.div\private\inc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b8f8188-8322-41ac-a327-e8f80a8398bf" name="Default" comment="" />
+      <created>1533106570532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533106570532</updated>
+      <workItem from="1533106572303" duration="110000" />
+      <workItem from="1533106773580" duration="4151000" />
+      <workItem from="1533111490094" duration="517000" />
+      <workItem from="1533126671574" duration="20382000" />
+      <workItem from="1533184961540" duration="4071000" />
+      <workItem from="1533194949106" duration="37004000" />
+      <workItem from="1533271458951" duration="4949000" />
+      <workItem from="1533285167486" duration="6229000" />
+      <workItem from="1533293681466" duration="1767000" />
+      <workItem from="1533298434269" duration="27165000" />
+      <workItem from="1533379938044" duration="20869000" />
+      <workItem from="1533446798233" duration="7579000" />
+      <workItem from="1533459808101" duration="6088000" />
+      <workItem from="1533474418477" duration="9375000" />
+      <workItem from="1533488535847" duration="3646000" />
+      <workItem from="1533493664137" duration="5518000" />
+      <workItem from="1533531728656" duration="362000" />
+      <workItem from="1533538138303" duration="3295000" />
+      <workItem from="1533547531997" duration="3791000" />
+      <workItem from="1533556644963" duration="5193000" />
+      <workItem from="1533565396325" duration="13582000" />
+      <workItem from="1533582506859" duration="1328000" />
+      <workItem from="1533621875569" duration="4967000" />
+      <workItem from="1533632642655" duration="759000" />
+      <workItem from="1533661211097" duration="9969000" />
+      <workItem from="1533706761305" duration="2519000" />
+      <workItem from="1533732993809" duration="6665000" />
+      <workItem from="1533748231210" duration="6140000" />
+      <workItem from="1533793619550" duration="11605000" />
+      <workItem from="1533813909560" duration="8933000" />
+      <workItem from="1533836408350" duration="5806000" />
+      <workItem from="1533875055382" duration="4457000" />
+      <workItem from="1533890220523" duration="7940000" />
+      <workItem from="1534053491384" duration="13610000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="270341000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18532526" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="25" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/slick.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/debug_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/recaptchalib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/home/fullscreen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/admin/signin-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/registration-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/activation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="45" column="131" lean-forward="false" selection-start-line="45" selection-start-column="131" selection-end-line="45" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/quick_test.php" />
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/signin-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/phpmailer/PHPMailerAutoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="94" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/left-menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/sinam.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="647" column="12" lean-forward="false" selection-start-line="647" selection-start-column="12" selection-end-line="647" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/dashboard-footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/ticket/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/validation_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-523">
+          <caret line="99" column="55" lean-forward="false" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/const.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/input-validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="485" column="44" lean-forward="true" selection-start-line="485" selection-start-column="44" selection-end-line="485" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/admin/user-controll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="132" lean-forward="false" selection-start-line="17" selection-start-column="132" selection-end-line="17" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/user-controll.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="19" column="141" lean-forward="true" selection-start-line="19" selection-start-column="134" selection-end-line="19" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="e#62#124#0#PHP" expanded="false" />
+            <element signature="n#es#0;n#!!top" expanded="false" />
+            <element signature="n#find_admin_by_email#0;n#!!top" expanded="false" />
+            <element signature="n#find_user_by_email#0;n#!!top" expanded="false" />
+            <marker date="1533894058739" expanded="true" signature="263:282" ph="SELECT * FRO... admin" />
+            <marker date="1533894058739" expanded="true" signature="544:566" ph="SELECT * FRO... sky_user" />
+            <marker date="1533894058739" expanded="true" signature="821:843" ph="SELECT * FRO... sky_user" />
+            <marker date="1533894058739" expanded="true" signature="1247:1259" ph="INSERT INTO ${$ta}... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1260" ph="INSERT INTO $... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1265" ph="INSERT INTO ${$tbl}... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1269" ph="INSERT INTO ${$tbl}... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1270" ph="INSERT INTO ${$tbl}... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1279" ph="INSERT INTO ${$tbl}... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1283" ph="INSERT INTO ${$tbl}... " />
+            <marker date="1533894058739" expanded="true" signature="1247:1284" ph="INSERT INTO ${$tbl}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/buy/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/inc/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="229" column="36" lean-forward="false" selection-start-line="229" selection-start-column="31" selection-end-line="229" selection-end-column="36" />
+          <folding>
+            <element signature="n#redirect_to#0;n#!!top" expanded="false" />
+            <element signature="n#home#0;n#!!top" expanded="false" />
+            <element signature="n#inc_file#0;n#!!top" expanded="false" />
+            <element signature="e#238#287#0#PHP" expanded="false" />
+            <element signature="n#link_assets#0;n#!!top" expanded="false" />
+            <element signature="n#link_css#0;n#!!top" expanded="false" />
+            <element signature="n#link_img#0;n#!!top" expanded="false" />
+            <element signature="n#link_script#0;n#!!top" expanded="false" />
+            <element signature="n#is_post_request#0;n#!!top" expanded="false" />
+            <element signature="n#array_left_right_concant_string#0;n#!!top" expanded="false" />
+            <element signature="n#formatError#0;n#!!top" expanded="false" />
+            <element signature="n#generateRandomString#0;n#!!top" expanded="false" />
+            <marker date="1533572029559" expanded="true" signature="4634:4653" ph="UPDATE sky_u... " />
+            <marker date="1533572029559" expanded="true" signature="4634:4656" ph="UPDATE sky_u... " />
+            <marker date="1533572029559" expanded="true" signature="5035:5054" ph="UPDATE sky_u... " />
+            <marker date="1533572029559" expanded="true" signature="5535:5554" ph="UPDATE sky_u... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/sell/registration-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/sell/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/buy/registration-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2485">
+          <caret line="630" column="50" lean-forward="false" selection-start-line="630" selection-start-column="50" selection-end-line="630" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/ku-main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="116" column="57" lean-forward="false" selection-start-line="116" selection-start-column="57" selection-end-line="116" selection-end-column="57" />
+          <folding>
+            <element signature="e#3478#4771#0" expanded="false" />
+            <element signature="e#6718#8526#0" expanded="false" />
+            <element signature="n#!!block;n#convert_dollar_to_taka#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/user/exchange/registration-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="27" column="127" lean-forward="false" selection-start-line="27" selection-start-column="127" selection-end-line="27" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/exchange/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="63" lean-forward="true" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/layout/admin/left-menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding>
+            <marker date="1534068164288" expanded="true" signature="1865:1886" ph="SELECT * FRO... sky_buy" />
+            <marker date="1534068164288" expanded="true" signature="4937:4959" ph="SELECT * FRO... sky_sell" />
+            <marker date="1534068164288" expanded="true" signature="8177:8203" ph="SELECT * FRO... sky_exchange" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/exchange/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/ticket/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/sell/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/buy/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

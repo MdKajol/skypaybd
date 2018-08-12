@@ -107,6 +107,7 @@ h3.olympia-title {
    list-style: none;
    margin-right: 10px;
    position: relative;
+   min-width: 150px;
 }
 .olympia-nav ul li:last-child {
    margin-right: 0;
@@ -143,7 +144,7 @@ h3.olympia-title {
    border-bottom: 0;
 }
 .olympia-nav ul li ul.dropdown li a {
-   padding: 15px 0;
+   padding: 15px 15px;
    text-align: center;
 }
 .olympia-nav ul li ul.dropdown li a:hover {
@@ -390,7 +391,6 @@ div.popover.ku-success .arrow:after{border-right-color: #29b000;}
 
 
 .main-section {
-   min-width: 250px;
    display: inline-block;
    background: rgb(254, 254, 254);
    border: 1px solid rgb(200, 200, 200);
@@ -401,27 +401,28 @@ div.popover.ku-success .arrow:after{border-right-color: #29b000;}
 }
 
 .single-label {
-   padding: 3px 10px;
+   padding: 10px 15px;
    border-bottom: 1px solid rgb(150, 150, 150);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .single-label:first-child {
    border-top: 1px solid rgb(150, 150, 150);
 }
 .user-label, .user-label-data {
-   width: 50%;
-   display: inline-block;
-   vertical-align: text-top;
-   font-family: sans-serif;
-   word-wrap: break-word;
+   font-family: 'Poppins', sans-serif;
 }
 .user-label {
-   font-size: 12px;
-   font-weight: bold;
-
+   font-size: 13px;
+   font-weight: 600;
+   color: black;
+   margin-bottom: 0;
 }
 .user-label-data {
    font-size: 12px;
-   color: rgb(200, 200, 200);
+   color: #444;
+   font-weight: 500;
 }
 .user-profile-photo {
    margin-bottom: 20px;
@@ -454,13 +455,17 @@ input[type="file"] {
 
 .admin-details {
    display: inline-block;
-   min-width: 250px;
-   position: absolute;
-   right: 0;
+   min-width: 280px;
+   right: 20px;
    z-index: 999;
-   bottom: 190px;
-   right: 40px;
+   position: absolute;
+   top: 35px;
+   box-shadow: -4px 4px 0px rgba(200, 200, 200, 0.63);
 }
+#admin-pro {
+   display: none;
+}
+
 
 .gray-style {
    border: 1px solid #ddd;
@@ -476,10 +481,9 @@ input[type="file"] {
    top: 5px;
 }
 .pro-hide {
-   position: absolute;
-   bottom: 150px;
-   right: 40px;
+
 }
+
 
 .abs-right {
    position: absolute;
@@ -498,12 +502,24 @@ input[type="file"] {
 }
 
 footer {
-   display: flex;
-   flex-direction: column;
-   height: 88vh;
-   justify-content: flex-end;
+   /*display: flex;*/
+   /*flex-direction: column;*/
+   /*height: 88vh;*/
+   /*justify-content: flex-end;*/
 }
+.user-control {
+   float: right;
+   position: relative;
+   margin-top: 10px;
+}
+.clearfix:before, .clearfix:after {
+   clear: both;
+}
+#admin-pro-hide {
+   position: absolute;
+   right: 20px;
 
+}
 #admin-pro-hide a, #admin-pro-hide a:focus {
    color: #444;
 }
@@ -520,4 +536,152 @@ footer {
 
 .user.form-wrapper input {
    margin-bottom: 0;
+}
+
+.menu-left-gap {
+   margin-left: 270px;
+   padding-left: 20px;
+}
+/* left menu */
+.left-menu {
+   max-width: 270px;
+   min-width: 250px;
+   /* background: #dee2e6; */
+   position: absolute;
+   top: 72px;
+   height: 100%;
+   padding: 10px 0px;
+   box-sizing: border-box;
+   overflow-y: visible;
+   padding-top: 0;
+}
+.left-menu ul {
+   margin-top: 40px;
+   position: fixed;
+   min-width: inherit;
+}
+.left-menu ul li{
+   padding: 10px 10px;
+   box-shadow: 0 0px 0px 1px lightcoral;
+   transition: all 1s;
+   position: relative;
+   margin-bottom: 20px;
+   margin-right: 1px;
+   margin-top: 5px;
+}
+.left-menu ul li:hover {
+   box-shadow: 0 0px 0px 1px #76b900;
+}
+
+.left-menu ul li i{
+   position: absolute;
+   left: 0;
+   background: lightcoral;
+   height: 100%;
+   width: 50px;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   color: #fff;
+   transition: all 1s;
+}
+.left-menu ul li:hover i {background: #76b900;}
+.left-menu ul li a{
+   color: #444;
+   font-size: 16px;
+   vertical-align: middle;
+   margin-left: 10px;
+   margin-left: 60px;
+   font-weight: 500;
+}
+
+.left-menu ul li:hover a {color: coral;}
+
+/*content area*/
+
+.dashboard-content-area {
+   margin-top: 44px;
+   min-height: 80vh;
+   max-width: 100%;
+   margin-bottom: 40px;
+   margin-right: 20px;
+   overflow: hidden;
+   background: #dee2e6;
+   box-sizing: border-box;
+   padding: 20px;
+}
+
+
+
+
+
+
+.dashboard-footer {
+   padding-left: 0;
+   margin-right: 20px;
+}
+
+.buying-form {
+   background: none;
+}
+
+
+.paymentDetails, .receiveDetails, .exchangeDetails {
+   display: none;
+}
+
+select.message.error, .error {
+   padding: 0px 10px;
+}
+
+
+.user-payment {
+   border: 1px solid #ddd;
+   padding: 20px 20px;
+   box-sizing: border-box;
+   margin: 20px 0px;
+   padding-bottom: 10px;
+   position: relative;
+}
+.how-user-pay:before {content: "Sent Money";}
+.how-user-receive:before {
+   content: "Receive Money";
+}
+.user-sell-rec:before {
+   content: "Receive Money";
+}
+.user-sell-pay:before {
+   content: "Sent Money";
+}
+.user-payment:before {
+
+   position: absolute;
+   top:-14px;
+   left: 5px;
+   background: #fff;
+   padding: 0px 10px;
+   font-size: 16px;
+   font-weight:700;
+   color: #7e7e7e;
+}
+
+input:read-only, textarea:read-only {
+   background-color: rgb(235, 235, 228);
+   color: rgb(84, 84, 84);
+   cursor: default;
+}
+
+#myTab {
+   display: flex;
+   margin-bottom: 25px;
+}
+#myTab li {
+   flex-grow: 1;
+   text-align: center;
+}
+#myTab li a.active {
+   border-bottom: 3px solid #76b900;
+   background: none;
 }

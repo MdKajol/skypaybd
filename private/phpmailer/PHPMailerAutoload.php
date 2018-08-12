@@ -42,10 +42,10 @@ if (version_compare(PHP_VERSION, '5.1.2', '>=')) {
      * Fall back to traditional autoload for old PHP versions
      * @param string $classname The name of the class to load
      */
-    function __autoload($classname)
-    {
-        PHPMailerAutoload($classname);
-    }
+//    function __autoload($classname)
+//    {
+//        PHPMailerAutoload($classname);
+//    }
 }
 
 function phpMailer($opt) {
@@ -67,30 +67,32 @@ function phpMailer($opt) {
 	//Ask for HTML-friendly debug output
 	$mail->Debugoutput = 'html';
 	//Set the hostname of the mail server
-	$mail->Host = 'smtp.gmail.com';
+	$mail->Host = 'server174.web-hosting.com';
 	// use
 	// $mail->Host = gethostbyname('smtp.gmail.com');
 	// if your network does not support SMTP over IPv6
-	//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-	$mail->Port = 587;
+
 	//Set the encryption system to use - ssl (deprecated) or tls
-	$mail->SMTPSecure = 'tls';
+	$mail->SMTPSecure = 'ssl';
+	//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+	$mail->Port = 465;
+
 	//Whether to use SMTP authentication
 	$mail->SMTPAuth = true;
 	//Username to use for SMTP authentication - use full email address for gmail
-	$mail->Username = "kajolahammed@gmail.com";
+	$mail->Username = "test@skypaybd.org";
 	//Password to use for SMTP authentication
-	$mail->Password = "v11o7v7v";
+	$mail->Password = "skypaybd";
 	// below code only for localhost
-	$mail->smtpConnect(
-		array(
-			"ssl" => array(
-				"verify_peer" => false,
-				"verify_peer_name" => false,
-				"allow_self_signed" => true
-			)
-		)
-	);
+//	$mail->smtpConnect(
+//		array(
+//			"ssl" => array(
+//				"verify_peer" => false,
+//				"verify_peer_name" => false,
+//				"allow_self_signed" => true
+//			)
+//		)
+//	);
 
 
 	$mail->setFrom($opt["from"]["email"], $opt["from"]["name"]);          // sent from email

@@ -29,7 +29,13 @@ function link_script($path = '') {
 	return trim(DOMAIN_PATH. "/public/assets/js/{$path}");
 }
 function active_page($page_name, $class_name = 'current_page') {
-	$current_page = basename($_SERVER['PHP_SELF']);
+	$current_page = str_replace("/public/", "", $_SERVER["PHP_SELF"]);
+	if($page_name === "index.php" || $page_name === "http://skypaybd.div") {
+		echo $class_name;
+		return false;
+	} else {
+		$page_name = str_replace("http://skypaybd.div/", "", $page_name);
+	}
 	if($current_page == $page_name) {
 		echo $class_name;
 	} else {
@@ -48,16 +54,36 @@ function is_admin_login() {
 	}
 	return false;
 }
+
+function is_user_login() {
+	if(isset($_SESSION["user_login"]) && count($_SESSION["user_login"]) > 0) {
+		return true;
+	}
+	return false;
+}
+
 function require_admin_login() {
 	if(!is_admin_login()) {
-		redirect_to("signin.php");
+		redirect_to(link_href("admin/signin.php"));
 	}
 }
+function require_user_login() {
+	if(!is_user_login()) {
+		redirect_to(link_href("user/signin.php"));
+	}
+}
+
 function admin_access_deny() {
 	if(is_admin_login()) {
-		redirect_to("index.php");
+		redirect_to(link_href("admin/index.php"));
 	}
 }
+function user_access_deny() {
+	if(is_user_login()) {
+		redirect_to(link_href("user/index.php"));
+	}
+}
+
 function login_admin($admin) {
 	session_regenerate_id();
 	$_SESSION["admin_login"]["admin_id"] = $admin["admin_id"];
@@ -67,9 +93,28 @@ function login_admin($admin) {
 	$_SESSION["admin_login"]["admin_last_login"] = time();
 	return true;
 }
+
+function login_user($usre) {
+	session_regenerate_id();
+	$_SESSION["user_login"]["user_id"] = $usre["user_id"];
+	$_SESSION["user_login"]["user_full_name"] = $usre["user_full_name"];
+	$_SESSION["user_login"]["user_email"] = $usre["user_email"];
+	$_SESSION["user_login"]["user_activation_status"] = $usre["user_activation_status"];
+	$_SESSION["user_login"]["user_phone"] = $usre["user_phone"];
+	$_SESSION["user_login"]["user_last_login"] = time();
+	return true;
+}
+
+
 function logout_admin() {
 	unset($_SESSION["admin_login"]);
-	redirect_to("signin.php");
+	redirect_to(link_href("admin/signin.php"));
+	return true;
+}
+
+function logout_user() {
+	unset($_SESSION["user_login"]);
+	redirect_to(link_href("user/signin.php"));
 	return true;
 }
 
@@ -161,5 +206,28 @@ function clear_user_activation($user_id, $user_email) {
 		return true;
 	} else {
 		echo $db->error;
+	}
+}
+
+function update_user_activation($user_id, $user_email, $activation_key, $activation_exp) {
+	global $db;
+	if(!isset($user_id) || !isset($user_email)) { return false; }
+	$sql = "UPDATE sky_user SET ";
+	$sql .= "user_activation_key='". $activation_key ."', ";
+	$sql .= "user_activation_expire='". $activation_exp ."' ";
+	$sql .= "WHERE user_id = '". es($user_id) ."' AND user_email = '". es($user_email) ."' ";
+	$sql .= "LIMIT 1";
+
+	$update = $db->query($sql);
+	if($db->affected_rows > 0) {
+		return true;
+	} else {
+		echo $db->error;
+	}
+}
+
+function is_dashboard() {
+	if( isset($_SESSION["admin_login"]) || isset($_SESSION["user_login"]) ) {
+		return true;
 	}
 }

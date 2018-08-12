@@ -60,10 +60,10 @@
 	       $val = [$user_full_name, $user_email, $user_password_hash, $user_phone, $user_activation_key, $user_activation_expire];
 	       $user_inserted = db_insert("sky_user", $col, $val);
 	       if($user_inserted) {
-            $message = "click here to active your account: " . DOMAIN_PATH . "/user/activation.php?mail=" . $user_email . "&key=" . $user_activation_key;
-
+	          $url = DOMAIN_PATH . "/user/activation.php?mail=" . urlencode($user_email) . "&key=" . urlencode($user_activation_key);
+            $message = "click here to active your account:<a href=". $url .">" .$url ."</a>";
             $sent = phpMailer(array(
-               "from" => ["email" => "skypaybd.org", "name" => "Sky Pay BD"],
+               "from" => ["email" => "test@skypaybd.org", "name" => "Sky Pay BD"],
                "to" => ["email" => $user_email, "name" => $user_full_name],
                "subject" => "Account Verification",
                "body" => $message

@@ -41,6 +41,22 @@ function find_user_by_email($email) {
 	return false;
 }
 
+function find_user_by_id($id) {
+	global $db;
+	$sql = "SELECT * FROM sky_user";
+	$sql .= " WHERE user_id = '" . es($id) ."'";
+	$sql .= " LIMIT 1";
+
+	$result = $db->query($sql);
+
+	if($result->num_rows) {
+		$row = $result->fetch_assoc();
+		return $row;
+	}
+	return false;
+}
+
+
 function db_insert($tbl, $col, $val) {
 	if( empty($col) && empty($val) && (count($col) !== count($val)) ) { return false; }
 

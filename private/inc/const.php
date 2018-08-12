@@ -5,6 +5,7 @@
 	if(!defined("DB_USER")) { define("DB_USER", "root"); }
 	if(!defined("DB_PASS")) { define("DB_PASS", "1234"); }
 	if(!defined("DB_NAME")) { define( "DB_NAME", "skypwmcx_ku_db" ); }
+	if(!defined("DOLLAR_TO_TAKA")) { define( "DOLLAR_TO_TAKA", 102 ); }
 
 	$google_secretKey = "6LfLYWgUAAAAAPjHS2gj4lPV1PR-chmdT2LM90LD";
 	$errors = [];
