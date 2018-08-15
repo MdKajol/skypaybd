@@ -2,7 +2,7 @@
 <?php require_user_login(); ?>
 
 <?php $user = $_SESSION["user_login"]; ?>
-<?php require_once(inc_file("layout/header.php")); ?>
+<?php require_once(inc_file("layout/dashboard-header.php")); ?>
 
 <?php require_once(inc_file("layout/user/user-controll.php")); ?>
 <?php require_once(inc_file("layout/user/left-menu.php")); ?>

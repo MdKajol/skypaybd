@@ -1,42 +1,35 @@
-<!-- home fullscreen video start -->
 <section class="home-fullscreen">
 	<div class="full-screen-v">
 		<div class="full-screen-source">
-			<video muted autoplay loop>
-				<source src="<?php echo link_assets("video/home-video.mp4"); ?>" type="video/mp4">
+			<!--<video muted autoplay loop>
+				<source src="<?php /*echo link_assets("video/home-video.mp4"); */?>" type="video/mp4">
 				Your browser does not support the video tag.
-			</video>
+			</video>-->
+         <figure>
+            <img src="<?php echo link_img("portfolio/port3.jpg"); ?>" alt="" style="width: 100%; height: 100%;">
+         </figure>
 		</div>
 		<div class="full-screen-data">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6 mt-120">
+				<div class="row justify-content-between align-items-md-center align-items-lg-center align-items-xl-center mt-lg-5">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8">
 						<div class="kslick">
-							<div class="full-screen-data-info full-screen-data-single-item">
-								<h2 class="mb-15">Simple Blog One</h2>
-								<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur delectus expedita illum iste praesentium quaerat, soluta? Alias aspernatur consequatur deleniti dicta dolores, eaque eum facilis fuga libero, magni possimus saepe.</p>
-								<button class="btn btn-coral">Read More</button>
+							<div class="kslick-single-item">
+								<h1 class="text-light">Welcome <br>to Sky Pay Bd</h1>
 							</div>
-							<div class="full-screen-data-info full-screen-data-single-item">
-								<h2 class="mb-15">Simple Blog Two</h2>
-								<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur delectus expedita illum iste praesentium quaerat, soluta? Alias aspernatur consequatur deleniti dicta dolores, eaque eum facilis fuga libero, magni possimus saepe.</p>
-								<button class="btn btn-coral">Read More</button>
+							<div class="kslick-single-item">
+								<h1 class="text-light">We are waiting for you to pay</h1>
 							</div>
+                     <div class="kslick-single-item">
+                        <h1 class="text-light">Make your payment quick and easy</h1>
+                     </div>
+                     <div class="kslick-single-item">
+                        <h1 class="text-light">Convert your dollar to <br>taka</h1>
+                     </div>
 						</div>
 					</div>
-					<div class="col-md-3 offset-md-3 mt-60">
-						<div class="olympia-form">
-							<h2 class="olympia-title-min">Sign In</h2>
-							<div class="form-wrapper">
-								<form id="contact-form" action="" method="POST">
-									<input name="username" type="email" placeholder="Your Username">
-									<input name="password" type="password" placeholder="Your Password">
-									<p class="" align="right"><a href="" class="text-success">Forgot Password?</a></p>
-									<input class="btn btn-coral border-0" name="submit" type="submit" value="Submit">
-									<p class="m-0"><a href="<?php echo link_href("user/register.php"); ?>" class="text-success">Click here</a> to Register</p>
-								</form>
-							</div>
-						</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+						<?php require_once(inc_file("layout/home/home-signin-form.php")); ?>
 					</div>
 				</div>
 			</div>
@@ -44,6 +37,6 @@
 		<div class="overlap"></div>
 	</div>
 </section>
-<!-- home fullscreen video end -->
+
 
 <!-- separator start --><div class="separator"></div><!-- separator end -->

@@ -40,7 +40,7 @@
 
 <div class="container">
    <div class="row">
-      <div class="col-md-6">
+      <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-6 order-md-0">
          <div class="olympia-form">
             <div class="showError"></div>
             <?php echo showMsg("success"); ?>
@@ -149,7 +149,7 @@
          </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-12 order-0 col-sm-12 order-sm-0 col-md-6 order-md-1">
          <div class="card mb-20">
             <div class="card-header bg-warning ">
                <h4 class="m-0 text-white">Warning</h4>

@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="copyright">
-                     <p>OlympiaBet.it &copy; 2018 All Rights Are registred</p>
+                     <p>skypaybd.org &copy; 2018 All Rights Are registred</p>
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6 col-md-6">
@@ -31,6 +31,8 @@
 	<script src="<?php echo link_script("popper.min.js"); ?>"></script>
 	<script src="<?php echo link_script("bootstrap.min.js"); ?>"></script>
 	<script src="<?php echo link_script("slick.min.js"); ?>"></script>
+	<script src="<?php echo link_script("jquery.slicknav.min.js"); ?>"></script>
+   <script src="<?php echo link_script("smooth-scroll.min.js"); ?>"></script>
 	<script src="<?php echo link_script("input-validate.js"); ?>"></script>
 	<script src="<?php echo link_script("ku-main.js"); ?>"></script>
    <script src='https://www.google.com/recaptcha/api.js'></script>

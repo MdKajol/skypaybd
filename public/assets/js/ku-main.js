@@ -1,11 +1,53 @@
 $(document).ready(function(){
    $('.kslick').slick({
-      dots: true,
-      autoplay: false,
-      // autoplaySpeed: 1000,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 1000,
       arrows : false,
+      fade: true,
+      cssEase: 'linear'
    });
 });
+
+$(document).ready(function(){
+   $('.we-acc-slick').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      arrows : false,
+      autoplay: true,
+      autoplaySpeed: 500
+   });
+
+
+
+
+
+
+   if(window.location.hash !== "") {
+      var link = $(".olympia-nav ul li a[href='"+ window.location.hash +"']");
+      var link2 = $(".slicknav_menu ul li a[href='"+ window.location.hash +"']");
+      $(".olympia-nav ul li a, .slicknav_menu ul li a").removeClass("nav-active");
+      link.addClass("nav-active");
+      link2.addClass("nav-active");
+   }
+
+   // mobile menu
+   $('#olympia-menu').slicknav({
+      label: "",
+      prependTo:'.olympia-nav'
+   });
+
+   // active link
+   $(".olympia-nav ul li a").click(function(){
+      $(".olympia-nav ul li a").removeClass("nav-active");
+      $(this).addClass("nav-active");
+   });
+
+});
+
+
 
 
 /*!
@@ -28,7 +70,7 @@ $.scrollUp({
 });
 
 
-// element toggle
+// user controll toggle
 $("#admin-pro-hide a").on('click',function(e){
    e.preventDefault();
    var state = $("#admin-pro").attr("ku-toggle");
@@ -41,8 +83,45 @@ $("#admin-pro-hide a").on('click',function(e){
       $("#admin-pro").attr("ku-toggle", "show");
       $(this).addClass("active");
    }
-
 });
+
+// left menu toggle
+$("#left-menu-hide a").on('click',function(e){
+   e.preventDefault();
+   var state = $("#left-menu").attr("ku-toggle");
+   if(state == "show") {
+      $("#left-menu").hide("slow");
+      $("#left-menu").attr("ku-toggle", "hide");
+      // $(".dashboard-content-area, .dashboard-footer").removeClass("menu-left-gap");
+      if($(window).width() <= 768) {
+         $(".menu-left-gap").css("marginLeft", "0px");
+      } else {
+         $(".menu-left-gap").css("marginLeft", "20px");
+      }
+      $(this).removeClass("active");
+   } else if(state == "hide") {
+      $("#left-menu").show("slow");
+      $("#left-menu").attr("ku-toggle", "show");
+      // $(".dashboard-content-area, .dashboard-footer").addClass("menu-left-gap");
+      if($(window).width() <= 768) {
+         $(".menu-left-gap").css("marginLeft", "100%");
+      } else {
+         $(".menu-left-gap").css("marginLeft", "270px");
+      }
+
+      $(this).addClass("active");
+   }
+});
+
+$(document).ready(function(){
+   if($(window).width() <= 768) {
+      $("#left-menu").attr("ku-toggle", "hide");
+      $("#left-menu").css("display", "none");
+      $(".menu-left-gap").css("marginLeft", "0px");
+      $("#left-menu-hide a").removeClass("active");
+   }
+});
+
 
 // payment method details
 $("select#paymentMethod").on("change", function () {
@@ -171,7 +250,6 @@ $("select#exchangeMethod").on("change", function () {
 
 
 
-
 function convert_dollar_to_taka(dollar, opt) {
    if(opt == "buy") {
       if(!isNaN(dollar)) {
@@ -194,23 +272,32 @@ function convert_dollar_to_taka(dollar, opt) {
    }
 
 }
-
 $("#buyDollar").on("keyup", function(){
    var dollar = $(this).val();
    var taka = convert_dollar_to_taka(dollar, "buy");
    $("#dollarInTaka").val(taka);
 });
-
 $("#sellDollar").on("keyup", function(){
    var dollar = $(this).val();
    var taka = convert_dollar_to_taka(dollar, "sell");
    $("#dollarInTaka").val(taka);
 });
-
 $("#exchangeDollar").on("keyup", function(){
    var dollar = $(this).val();
    var taka = convert_dollar_to_taka(dollar, "exchange");
    $("#dollarInTaka").val(taka);
 });
+
+// smoth scroll
+var scroll = new SmoothScroll('.olympia-nav ul li a[href*="#"]', {
+   speed: 2000,
+   easing: 'easeInOutCubic',
+   updateURL: true, // Update the URL on scroll
+   popstate: true,
+   offset: 100
+});
+
+
+
 
 

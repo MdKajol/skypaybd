@@ -2,7 +2,7 @@
 <?php require_admin_login(); ?>
 
 <?php $admin = $_SESSION["admin_login"]; ?>
-<?php require_once(inc_file("layout/header.php")); ?>
+<?php require_once(inc_file("layout/dashboard-header.php")); ?>
 
 <?php require_once(inc_file("layout/admin/user-controll.php")); ?>
 <?php require_once(inc_file("layout/admin/left-menu.php")); ?>
@@ -28,7 +28,7 @@
             <div class="tab-content" id="myTabContent">
                <!-- buy start-->
                <div class="tab-pane fade show active" id="buy" role="tabpanel" aria-labelledby="home-tab">
-                  <table class="table table-light table-bordered">
+                  <table class="table table-responsive table-light table-bordered">
                      <thead>
                      <tr>
                         <th scope="col">Id</th>
@@ -87,7 +87,7 @@
 
                <!-- sell start-->
                <div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="profile-tab">
-                  <table class="table table-light table-bordered">
+                  <table class="table table-responsive table-light table-bordered">
                      <thead>
                      <tr>
                         <th scope="col">Id</th>
@@ -110,7 +110,7 @@
 
                             <tr>
                                <th scope="row"><?php echo $row["sell_id"]; ?></th>
-                               <td style="vertical-align: middle; margin: 0 auto;">
+                               <td>
                                   <table class="table-dark table-bordered">
                                      <tr><th>Name</th><td><?php echo $user["user_full_name"]; ?></td></tr>
                                      <tr><th>Email</th><td><?php echo $user["user_email"]; ?></td></tr>
@@ -141,12 +141,9 @@
                </div><!-- sell end-->
 
 
-
-
-
                <!-- excange start-->
                <div class="tab-pane fade" id="exchange" role="tabpanel" aria-labelledby="contact-tab">
-                  <table class="table table-light table-bordered">
+                  <table class="table table-responsive table-light table-bordered">
                      <thead>
                      <tr>
                         <th scope="col">Id</th>

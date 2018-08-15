@@ -412,7 +412,63 @@ $("#receivedMethod").on("change", function() {
       hideValidationError($(this));
    }
 });
+$("#exchangeMethod").on("change", function() {
+   hideError($(".showError"));
+
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "please select one"],
+      }
+   });
+
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
 $("#buyDollar").on("keyup focus", function() {
+   hideError($(".showError"));
+
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "cannot be blank"],
+         numeric: [true, "please enter numeric character"]
+      }
+   });
+
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#sellDollar").on("keyup focus", function() {
+   hideError($(".showError"));
+
+   var field = checkValidation({
+      ele: $(this),
+      check: {
+         empty: [true, "cannot be blank"],
+         numeric: [true, "please enter numeric character"]
+      }
+   });
+
+   if(field !== "pass") {
+      // show the errors
+      var errormsg = getErrorMsg($(this));
+      if(errormsg) {showValidationError($(this), errormsg);}
+   } else {
+      hideValidationError($(this));
+   }
+});
+$("#exchangeDollar").on("keyup focus", function() {
    hideError($(".showError"));
 
    var field = checkValidation({
@@ -496,7 +552,6 @@ $("#buySubmit").on("submit", function (e) {
 
    }
 });
-
 $(".email").on("keyup focus", function() {
    hideError($(".showError"));
 
@@ -533,3 +588,8 @@ $(".empty").on("keyup focus", function() {
    }
 });
 
+$(document).ready(function(){
+   var pos = ($(window).width() <= 768) ? 'top' : 'right';
+   $("* input").popover({'placement': pos, 'html' : true, 'trigger': 'focus'});
+   $("* select").popover({'placement': pos, 'html' : true, 'trigger': 'focus'});
+});

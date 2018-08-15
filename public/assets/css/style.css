@@ -81,6 +81,11 @@ h3.olympia-title {
    /*background: aliceblue;*/
    background-image: linear-gradient(to right bottom, #00c9b7, #00bee7, #00abff, #0087ff, #c330f8);
    padding: 15px 0;
+   position:fixed;
+   top: 0;
+   width: 100%;
+   left: 0;
+   z-index: 10;
 
 }
 /* Olympia Logo */
@@ -107,7 +112,7 @@ h3.olympia-title {
    list-style: none;
    margin-right: 10px;
    position: relative;
-   min-width: 150px;
+   /*min-width: 150px;*/
 }
 .olympia-nav ul li:last-child {
    margin-right: 0;
@@ -520,10 +525,21 @@ footer {
    right: 20px;
 
 }
+#left-menu-hide {
+   position: fixed;
+   left: 20px;
+   z-index: 9999;
+}
 #admin-pro-hide a, #admin-pro-hide a:focus {
    color: #444;
 }
+#left-menu-hide a, #left-menu-hide a:focus {
+   color: #444;
+}
 #admin-pro-hide a.active, #admin-pro-hide a.active:focus {
+   color: #2B96CC;
+}
+#left-menu-hide a.active, #left-menu-hide a.active:focus {
    color: #2B96CC;
 }
 
@@ -548,12 +564,13 @@ footer {
    min-width: 250px;
    /* background: #dee2e6; */
    position: absolute;
-   top: 72px;
+   top: 85px;
    height: 100%;
    padding: 10px 0px;
    box-sizing: border-box;
    overflow-y: visible;
    padding-top: 0;
+   z-index: 9;
 }
 .left-menu ul {
    margin-top: 40px;
@@ -613,11 +630,6 @@ footer {
    padding: 20px;
 }
 
-
-
-
-
-
 .dashboard-footer {
    padding-left: 0;
    margin-right: 20px;
@@ -626,8 +638,6 @@ footer {
 .buying-form {
    background: none;
 }
-
-
 .paymentDetails, .receiveDetails, .exchangeDetails {
    display: none;
 }
@@ -683,5 +693,139 @@ input:read-only, textarea:read-only {
 }
 #myTab li a.active {
    border-bottom: 3px solid #76b900;
+   background: none;
+}
+
+label#pro-label {
+   position: relative;
+}
+
+#sizeStatus {
+   color: #fff;
+   position: absolute;
+   bottom: 0;
+   background: rgba(0,0,0, 0.7);
+   left: 0;
+   width: 100%;
+   font-size: 10px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   display: none;
+   text-align: center;
+}
+#sizeStatus div {
+   line-height: 14px;
+}
+
+.skyProgress {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   left: 0;
+   height: 2px;
+}
+
+#skyProBar {
+
+}
+
+.refresh {
+   position: absolute;
+   bottom: 5px;
+   left: 0;
+   display: none;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: flex-end;
+   font-size: 15px;
+   color: #fff;
+   display: none;
+   z-index: 99999;
+}
+
+.kslick-single-item h1 {
+   font-size: 100px;
+   font-family: 'Poppins', sans-serif;
+   opacity: 0.3;
+   line-height: 125px;
+   text-transform: uppercase;
+}
+
+/* min service box design*/
+.min-service-area {
+   background: #76b900;
+}
+.min-service-box {
+   box-shadow: none;
+   background: #76b900;
+   padding: 0;
+   height: auto;
+   text-align: center;
+   padding: 20px;
+   transition: all 2s;
+}
+.min-service-box * {
+   color: #fff;
+   font-size: 14px;
+}
+.min-service-box:hover {
+   transform: translateY(0px);
+   box-shadow: 0px 5px 50px 1px #6c757d;
+}
+.min-service-box .service-icon i {
+   color: #fff;
+}
+.min-service-box .service-content {}
+.min-service-box .service-content h3{}
+.min-service-box .service-content p{}
+
+.we-acc-slick {
+   width: 70%;
+   margin: 0 auto;
+}
+.acc-single-item {
+   width: 100px;
+   height: 100px;
+}
+.acc-single-item img{
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.about-text p {
+   line-height: 60px;
+   text-align: justify;
+   font-weight: 600;
+   color: lightslategray;
+}
+
+section.home-fullscreen {
+   margin-top: 85px;
+}
+
+.nav-active {
+   color: coral !important;
+}
+
+.slicknav_menu {
+   right: 15px;
+   position: fixed;
+   top: 15px;
+   background: none;
+   z-index: 999;
+}
+
+.slicknav_menu ul{
+   background: #fff;
+}
+.slicknav_menu ul li {padding: 0px; margin: 0; border-bottom: 1px solid #f1f1f1;}
+.slicknav_menu ul li:last-child {border-bottom: 0px;}
+.slicknav_menu ul li a{display: block; padding: 15px 20px; margin: 0; min-width: 250px}
+.slicknav_menu ul li a:hover {
+   border-radius: 0px;
    background: none;
 }

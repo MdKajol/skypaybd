@@ -1,4 +1,4 @@
-<div class="left-menu">
+<div id="left-menu" class="left-menu" ku-toggle="show">
 	<ul>
 		<li>
 			<i class="icofont icofont-dashboard-web"></i>

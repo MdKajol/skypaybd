@@ -41,7 +41,7 @@ if(is_post_request()) {
    <div class="full-screen-v admin">
       <div class="container">
          <div class="row">
-            <div class="col-md-4 offset-md-4 mt-60 mb-60">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 offset-md-2 offset-lg-4 offset-xl-4 mt-60 mb-60">
                <div class="olympia-form">
                   <div class="showError"></div>
 				   <?php echo showMsg("error"); ?>

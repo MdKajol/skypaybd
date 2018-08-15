@@ -80,7 +80,7 @@
    <div class="full-screen-v admin">
       <div class="container">
          <div class="row">
-            <div class="col-md-6 offset-md-3 mt-60 mb-60">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 offset-md-2 offset-lg-3 offset-xl-3 mt-60 mb-60">
                <div class="olympia-form">
                   <div class="showError"></div>
                   <?php echo showMsg("success"); ?>

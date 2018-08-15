@@ -1,5 +1,4 @@
-<!-- service area strat -->
-<div class="service-area">
+<div id="services" class="service-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -7,74 +6,73 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-30">
+            <div class="service-box">
+               <div class="service-icon">
+                  <i class="fa fa-money"></i>
+               </div>
+               <div class="service-content">
+                  <h3>Dollar Buy, Sell, Exchange</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi sunt nisi id magni dignissimos rem semsila eaque, rem!.</p>
+               </div>
+            </div>
+         </div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-30">
 				<div class="service-box">
 					<div class="service-icon">
-						<i class="pe-7s-sun"></i>
+						<i class="fa fa-exchange"></i>
 					</div>
 					<div class="service-content">
-						<h3>Facile</h3>
-						<p>Puoi farlo anche se non sei esperto di calcio, il nostro sistema è alla portata di tutti.</p>
+						<h3>Instant Payment</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi sunt nisi id magni dignissimos rem semsila eaque, rem!.</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-30">
 				<div class="service-box">
 					<div class="service-icon">
-						<i class="pe-7s-settings"></i>
+						<i class="fa fa-globe"></i>
 					</div>
 					<div class="service-content">
-						<h3>Coinvolgente</h3>
-						<p>Controlla quando vuoi i progressi del tuo investimento.</p>
+						<h3>Quick Reply</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi sunt nisi id magni dignissimos rem semsila eaque, rem!.</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-30">
 				<div class="service-box">
 					<div class="service-icon">
-						<i class="pe-7s-monitor"></i>
+						<i class="fa fa-calendar-check-o"></i>
 					</div>
 					<div class="service-content">
-						<h3>Sicuro</h3>
-						<p>Garanzia soddisfatti o rimborsati.</p>
+						<h3>1% Referral Commission System</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi sunt nisi id magni dignissimos rem semsila eaque, rem!.</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-30">
 				<div class="service-box">
 					<div class="service-icon">
-						<i class="pe-7s-graph1"></i>
+						<i class="fa fa-calendar"></i>
 					</div>
 					<div class="service-content">
-						<h3>Prova gratuita</h3>
-						<p>Guadagna subito i tuoi primi 40€.</p>
+						<h3>Direct Referral Income</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi sunt nisi id magni dignissimos rem semsila eaque, rem!.</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 mb-30">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-30">
 				<div class="service-box">
 					<div class="service-icon">
-						<i class="pe-7s-plane"></i>
+						<i class="fa fa-cogs"></i>
 					</div>
 					<div class="service-content">
-						<h3>Rischio zero</h3>
-						<p>Giocando tutti gli esiti avrai la certezza della vincita.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 mb-30">
-				<div class="service-box">
-					<div class="service-icon">
-						<i class="pe-7s-check"></i>
-					</div>
-					<div class="service-content">
-						<h3>Comodo</h3>
-						<p>Strumenti e video tutorial sempre a tua disposizione.</p>
+						<h3>24 Hours Reply</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipi sunt nisi id magni dignissimos rem semsila eaque, rem!.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- service area end -->
 <!-- separator start --><div class="separator"></div><!-- separator end -->

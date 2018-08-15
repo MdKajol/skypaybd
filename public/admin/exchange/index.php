@@ -2,7 +2,7 @@
 <?php require_admin_login(); ?>
 
 <?php $admin = $_SESSION["admin_login"]; ?>
-<?php require_once(inc_file("layout/header.php")); ?>
+<?php require_once(inc_file("layout/dashboard-header.php")); ?>
 
 <?php require_once(inc_file("layout/admin/user-controll.php")); ?>
 <?php require_once(inc_file("layout/admin/left-menu.php")); ?>
